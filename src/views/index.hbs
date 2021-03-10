@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <title>Twibbon IND</title>
+    <title>Twibbon Binekas</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -78,26 +78,39 @@
 <body>
     <div class="container">
         <div class="col-12 d-flex justify-content-center">
-            <img src="/assets/logoind.png" width="250px" height="103px" />
+            <img src="/assets/logo.png" width="250px" height="103px" />
         </div>
-        <h1 class="text-center head-text">Twibbon IND</h1>
-        <h6 class="text-center subhead-text">Agar hasil maksimal, gunakan foto berskala 1:1.</h6>
+        <h1 class="text-center head-text">TWIBBON PONPES JQB</h1>
+        <h6 class="text-center subhead-text">InsyaAllah. kami akan selalu Update.. Perbaharui status dengan <b><i>Twibbon Ponpes JQB</b></i>.</h6>
         <p class="text-center text-muted small copyright-text">
-        Made with ☕  by: <a href="https://www.psb.jaisyulquran.sch.id"> Ponpes Jaisyul Quran Binekas</a>
+        Penerimaan Peserta Didik Baru T.P 2021-2022 : 
+		<br><i class="fa fa-graduation-cap"></i><a href="https://www.ppdbsdit.binaedukasia.my.id"> SD IT BINA EDUKASIA</a>
+		<br><i class="fa fa-graduation-cap"></i><a href="https://www.ppdbsmpit.jaisyulquran.sch.id"> SMP IT JAISYUL QUR'AN</a>
+		<br><i class="fa fa-graduation-cap"></i><a href="https://www.ppdbsmait.jaisyulquran.sch.id"> SMA IT JAISYUL QUR'AN</a>
         </p>
         <hr />
-        <div class="col-12 d-flex justify-content-center my-2">
+        <!--<div class="col-12 d-flex justify-content-center my-2">
             <div class="custom-control custom-radio pilih-twibbon">
                 <input type="radio" onchange="$('.pilih-foto').show();" class="custom-control-input" id="akubisa"
                     name="twibbonType" value="akubisa">
                 <label class="custom-control-label" for="akubisa"><span class="indonesia-1">#AKU</span><span
                         class="indonesia-2">BISA!</span></label>
-            </div>
+            </div>-->
             <div class="custom-control custom-radio pilih-twibbon">
+                <input type="radio" onchange="$('.pilih-foto').show();" class="custom-control-input" id="sdit"
+                    name="twibbonType" value="sdit">
+                <label class="custom-control-label" for="sdit">#SDIT_ISRAMI'RAJ!</label>
+            </div>
+			<div class="custom-control custom-radio pilih-twibbon">
+                <input type="radio" onchange="$('.pilih-foto').show();" class="custom-control-input" id="isramiraj"
+                    name="twibbonType" value="isramiraj">
+                <label class="custom-control-label" for="isramiraj">#JQ_ISRAMI'RAJ!</label>
+            </div>
+			<!--<div class="custom-control custom-radio pilih-twibbon">
                 <input type="radio" onchange="$('.pilih-foto').show();" class="custom-control-input" id="caxcox"
                     name="twibbonType" value="caxcox">
                 <label class="custom-control-label" for="caxcox">#JANGANBERHENTIBERGERAK!</label>
-            </div>
+            </div>-->
         </div>
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-lg-5 form-input pilih-foto">
@@ -199,6 +212,30 @@
             }
         }
     </script>
+	<script>
+$(document).bind('contextmenu',function(e) {
+alert('Maaf Tidak bisa klik kanan atau copas')
+location.reload();
+return false;
+});
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+alert('Maaf Tidak bisa klik kanan atau copas')
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+alert('Maaf Tidak bisa klik kanan atau copas')
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+alert('Maaf Tidak bisa klik kanan atau copas')
+return false;
+}
+}
+</script>
 </body>
 
 </html>
