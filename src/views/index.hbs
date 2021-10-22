@@ -83,10 +83,10 @@
         <h1 class="text-center head-text">TWIBBON PONPES JQB</h1>
         <h6 class="text-center subhead-text">Jika cinta itu ilmu hadis, maka, kualitas dan kekuatan cinta kita adalah hadis sahih yang sudah teruji dan terverifikasi oleh berbagai tempaan dan ujian.</h6>
         <p class="text-center text-muted small copyright-text">
-        Penerimaan Peserta Didik Baru T.P 2021-2022 : 
-		<br><i class="fa fa-graduation-cap"></i><a href="https://www.ppdbsdit.binaedukasia.my.id"> SD IT BINA EDUKASIA</a>
-		<br><i class="fa fa-graduation-cap"></i><a href="https://www.ppdbsmpit.jaisyulquran.sch.id"> SMP IT JAISYUL QUR'AN</a>
-		<br><i class="fa fa-graduation-cap"></i><a href="https://www.ppdbsmait.jaisyulquran.sch.id"> SMA IT JAISYUL QUR'AN</a>
+        Penerimaan Peserta Didik Baru T.P 2022-2023 : 
+		<br><i class="fa fa-graduation-cap"></i><a href="https://www.ppdb.jaisyulquran.com"> PESANTRAN JAISYUL QUR'AN BINEKAS</a>
+		<!--<br><i class="fa fa-graduation-cap"></i><a href="https://www.ppdb.jaisyulquran.com"> SMP IT JAISYUL QUR'AN</a>
+		<br><i class="fa fa-graduation-cap"></i><a href="https://www.ppdbsmait.jaisyulquran.sch.id"> SMA IT JAISYUL QUR'AN</a>-->
         </p>
         <hr />
         <!--<div class="col-12 d-flex justify-content-center my-2">
@@ -97,11 +97,11 @@
                         class="indonesia-2">BISA!</span></label>
             </div>-->
             <div class="custom-control custom-radio pilih-twibbon">
-                <input type="radio" onchange="$('.pilih-foto').show();" class="custom-control-input" id="iduladha"
-                    name="twibbonType" value="iduladha">
-                <label class="custom-control-label" for="iduladha">#IDULFITRI1442H_PESANTRENJAISYULQURBINEKAS</label>
+                <input type="radio" onchange="$('.pilih-foto').show();" class="custom-control-input" id="santri"
+                    name="twibbonType" value="santri">
+                <label class="custom-control-label" for="santri">#HARISANTRI2021_PESANTRENJAISYULQURBINEKAS</label>
             </div>
-	    <div class="custom-control custom-radio pilih-twibbon">
+	    <!--<div class="custom-control custom-radio pilih-twibbon">
                 <input type="radio" onchange="$('.pilih-foto').show();" class="custom-control-input" id="mondok"
                     name="twibbonType" value="mondok">
                 <label class="custom-control-label" for="mondok">#AYOKMONDOK&MPLS_PESANTRENJAISYULQURBINEKAS</label>
@@ -111,7 +111,7 @@
                     name="twibbonType" value="twbSD">
                 <label class="custom-control-label" for="twbSD">#TAHUNBARUHIJRIYAHSDITBINEKAS_PESANTRENJAISYULQURBINEKAS</label>
             </div>
-	    <!--<div class="custom-control custom-radio pilih-twibbon">
+	    <div class="custom-control custom-radio pilih-twibbon">
                 <input type="radio" onchange="$('.pilih-foto').show();" class="custom-control-input" id="tsd1"
                     name="twibbonType" value="tsd1">
                 <label class="custom-control-label" for="tsd1">#2Hari_Menuju_Ramadhan---SD</label>
@@ -223,29 +223,14 @@
         }
     </script>
 	<script>
-$(document).bind('contextmenu',function(e) {
-alert('Maaf Tidak bisa klik kanan atau copas')
-location.reload();
-return false;
-});
-document.onkeydown = function(e) {
-if(event.keyCode == 123) {
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-alert('Maaf Tidak bisa klik kanan atau copas')
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
-alert('Maaf Tidak bisa klik kanan atau copas')
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
-alert('Maaf Tidak bisa klik kanan atau copas')
-return false;
-}
-}
-</script>
+		var pesen="Afwan... tidak bisa klik kanan ya... ";
+		///////////////////////////////////
+		function clickIE4(){if (event.button==2){alert(pesen);return false;}}
+		function clickNS4(e){if (document.layers||document.getElementById&&!document.all){if (e.which==2||e.which==3){alert(pesen);return false;}}}
+		if (document.layers){document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS4;}
+		else if (document.all&&!document.getElementById){document.onmousedown=clickIE4;}
+		document.oncontextmenu=new Function("alert(pesen);return false")
+	</script>
 </body>
 
 </html>
